@@ -91,10 +91,10 @@
     }
 
     async function main() {
-  
-      liff.init({ liffId: "1654167688-XdN3PBwo" })
+      liff.init({ liffId: "1654167688-XdN3PBwo" }, () => {}, err => console.error(err.code, error.message));
+      //await liff.init({ liffId: "1654167688-XdN3PBwo" })
       getEnvironment()
-      //getUserProfile()
+      getUserProfile()
       // getContext()
       // getFriendship()
       // createUniversalLink()
